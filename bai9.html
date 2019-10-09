@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra cạnh một tam giá</title>
+</head>
+<body>
+<script>
+    let edgeA = null;
+    let edgeB = null;
+    let edgeC = null;
+    do {
+        edgeA = parseFloat(prompt("Nhập cạnh a"));
+    } while (edgeA < 0)
+    do {
+        edgeB = parseFloat(prompt("Nhập cạnh c"))
+    } while (edgeB < 0)
+    do {
+        edgeC = parseFloat(prompt("Nhập cạnh c"))
+    } while (edgeC < 0)
+    if (edgeA + edgeB > edgeC && edgeA + edgeC > edgeB && edgeB + edgeC > edgeA) {
+        alert("Ba cạnh a, b ,c là cạnh tam giác");
+    } else {
+        alert("Ba cạnh a, b, c không là cạnh tam giác");
+    }
+</script>
+</body>
+</html>

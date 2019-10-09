@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình chữ nhật</title>
+</head>
+<body>
+<script>
+    let length = null;
+    let width = null;
+    do {
+        length = parseFloat(prompt("Nhập chiều dài: "))
+    } while (length < 0)
+
+    do {
+        width = parseFloat(prompt("Nhập chiều rộng: "))
+    } while (width < 0)
+
+    alert("Diện tích hình chữ nhật là: " + length*width);
+</script>
+</body>
+</html>

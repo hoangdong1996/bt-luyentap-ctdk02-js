@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích tam giác vuông</title>
+</head>
+<body>
+<script>
+    let edge1 = null;
+    let edge2 = null;
+    do {
+        edge1 = parseFloat(prompt("Nhập cạnh kề a: "));
+    } while (edge1 < 0);
+
+    do {
+        edge2 = parseFloat(prompt("Nhập cạnh kề b: "));
+    } while (edge2 < 0);
+
+    alert("Diện tích tam giác vuông cạnh kề a, b là: " + 1/2*edge2*edge1);
+</script>
+</body>
+</html>

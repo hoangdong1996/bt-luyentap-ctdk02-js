@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giá điện</title>
+</head>
+<body>
+<script>
+    let powerNumber = null;
+    do {
+        powerNumber = parseFloat(prompt("Nhập số điện: "));
+    } while (powerNumber < 0);
+    if (0 < powerNumber && powerNumber < 50){
+        alert("Tiện điện là: " + powerNumber*1.687);
+    } else if (51 < powerNumber && powerNumber < 100) {
+        alert("Tiền điện là: " + powerNumber*1.734);
+    } else if (101 < powerNumber && powerNumber < 200) {
+        alert("Tiền điện là: " + powerNumber*2.014);
+    } else if (201 < powerNumber && powerNumber < 300) {
+        alert("Tiền điện là: " + powerNumber * 2.536);
+    } else if (301 < powerNumber && powerNumber < 400) {
+        alert("Tiền điện là: " + powerNumber * 2.834);
+    } else {
+        alert("Tiền điện là: " + powerNumber * 2.927);
+    }
+</script>
+</body>
+</html>
